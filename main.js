@@ -2,9 +2,44 @@
  * YOUR CODE HERE *
  ******************/
 
+function addMeToEnd (arr) {
+  arr.push("Colin");
+}
 
+function addMeToStart (arr) {
+  arr.unshift("Colin");
+}
 
+function changeLast (arr, value){
+  arr[arr.length - 1] = value;
+}
 
+function changeAllValuesTo (arr, value) {
+  for(let i = 0; i < arr.length; i++){
+    arr[i] = value;
+  }
+}
+
+function oddOrEven (arr) {
+  for(let i = 0; i < arr.length; i++){
+    if (arr[i] % 2 === 0){
+      arr[i] = 'even';
+    }else {
+      arr[i] = 'odd';
+    }
+  }
+}
+
+function changeNextThreeToValue (startIndex, arr, value) {
+  for(let i = 0; i < arr.length; i++){
+    if(startIndex === i){
+      arr[i] = value;
+      arr[i+1] = value;
+      arr[i+2] = value;
+      break;
+    }
+  }
+}
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
